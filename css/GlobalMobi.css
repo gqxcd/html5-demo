@@ -1,0 +1,499 @@
+@CHARSET "UTF-8";
+/**整个页面的样式**/
+.android .view .pages{
+	background-color:#ffffff;
+	color:#000;
+	font-size:16px;
+}
+
+.panel.panel_view{
+	padding-top:13px;
+}
+
+/**单选多选选项标题以及矩阵按钮样式**/
+input.OptionButton + label.OptionTitle,
+input.OptionButton + label.matrix-rating-OptionButton{
+    float: none;   
+    left: 25px;
+    font-size:18px;
+    padding:0;
+    width:80%;
+}
+input.OptionButton + label.OptionTitle:before,
+input.OptionButton + label.matrix-rating-OptionButton:before{
+	height: 20px;
+    width: 20px;
+    top:1px;
+    	
+}
+input[type="radio"] + label.OptionTitle:before,
+input[type="radio"] + label.matrix-rating-OptionButton:before{	
+    border-radius: 20px;	
+}
+input[type="checkbox"] + label.OptionTitle:before,
+input[type="checkbox"] + label.matrix-rating-OptionButton:before{
+   line-height: 15px;	/**钩样式**/
+}
+
+/**单选多选样式结束**/
+
+
+/*设置题目之间以及题目头部信息和题目内容之间有一定的空隙*/
+.Question{
+	width:95%;
+	margin:0 auto 20px;
+	}
+
+
+div.QuestionHeader{
+  margin-bottom: 8px;
+   }
+
+div.qnaireHeader h1.ui-title {
+	margin: 0 10%;
+}
+div.qnaireHeader span.nameTag {
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #FFF;
+    padding: 5px;
+    text-shadow: 0 0 0;
+}
+div.qnaireHeader span.nameTag.allQuesTag {
+    border-radius: 4px;
+    background-color: #7CB4EE;
+}
+
+/**单项多项等选择题选项之间间隙***/
+.Option{
+	font-weight:normal;	
+	margin-bottom:10px;
+	background-color: #f8f8ff;
+}
+
+
+
+/**题目整体间隙样式结束**/
+
+
+/**多项填空样式***/
+.OptionTitle {
+	float: inherit;
+    width: inherit;
+    font-size: 18px;
+    padding: 0;
+}
+
+/** 单项多项填空样式**/
+.inputBox{
+	height:42px;	
+	background-color:#fff;
+	width:95%;
+	margin-bottom:0px;
+}
+.ui-block-a, .ui-block-b{
+	width:100% !important;
+	padding-top:0px !important;
+	padding-bottom:5px !important;
+}
+
+
+
+
+
+
+/*选项宽度及居中*/
+div.QuestionContent{
+	width:85%;
+	margin:10px auto 0;
+	padding-bottom: 10px;
+	}
+.qnaireFooter{
+	font-size:14px;
+	background-color:#009393 !important;
+	color:#fff !important;
+	height: 30px !important;
+}
+.qnaireFooter_text{
+	margin:auto;
+}
+.view header{
+	font-size:20px;
+	background-color:#009393;
+	color:#fff;
+}
+
+body, input, select, textarea, button, .ui-btn{font-family:Microsoft Yahei}
+
+/*logo放在标题栏*/
+.logo{display:inline;}
+
+
+
+
+
+
+/*  除矩阵题外的题目选项原因框样式*/
+.OptionFillBlank{
+	display:none
+}
+
+.colOptionTr{
+	background-color:#eeffee;
+}
+.colOptionTitlePage{
+	margin-bottom:5px;
+}
+table.topBox{
+	padding:0;
+	
+}
+table.matrix-rating{
+	padding: inherit;
+}
+.colOptionTH{
+	font-weight: bold !important;
+    font-size: 16px !important;
+}
+
+table.matrix-rating td.rowOptionTitle-OptionTitle {
+    font-size: 12px;
+    padding: 3px 0;
+    text-align: center;
+}
+table.matrix-rating td {
+    /*padding: 3px 0 8px;*/
+    text-align: center; 
+}
+
+table.matrix-rating td.rowOptionTitle-OptionTitle1 {
+	text-align:-webkit-left;
+	padding: 5px 0 0 8px;
+	font-size:16px;
+	/*font-weight: bold;*/
+}
+input.OptionButton + label.matrix-rating-OptionButton{
+    left: 0px;
+    padding-left: 30%;
+}
+input.OptionButton + label.matrix-rating-OptionButton:before{
+	top:-20px;
+	position:initial;
+}
+
+/*  矩阵单选多选样式结束**/
+
+
+
+/***矩阵填空样式***/
+.colOptionTitle{
+	color:#717162;
+}
+
+
+
+
+
+
+
+
+/**滑动条题样式
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+  max-width: 250px;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #ccff99;
+  border-radius: 1.3px;
+  
+}
+input[type=range]::-webkit-slider-thumb {
+  
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  background: #008866;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #f5e6e6;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+ 
+  background: #f5e6e6;
+  border-radius: 1.3px;
+ 
+}
+input[type=range]::-moz-range-thumb {
+ 
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #f5e6e6;
+ 
+  border-radius: 2.6px;
+ 
+}
+input[type=range]::-ms-fill-upper {
+  background: #f5e6e6;
+
+  border-radius: 2.6px;
+ 
+}
+input[type=range]::-ms-thumb {
+ 
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #f5e6e6;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #f5e6e6;
+}
+
+选项标题*/
+
+
+
+
+
+
+
+/*矩阵滑动条题*/
+
+/**滑动条题样式*/
+.gird-range{
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-left:5px
+	
+}
+
+.matrix-slider{
+	margin:25px 0px;
+}
+/****滑动题***/
+label.slide{
+	font-size: 16px;
+    color: #080808;
+    width: 100%;
+    padding: 0;
+}
+
+.fl{
+	float:left;
+    width: initial;
+    text-align: left;
+}
+.fr{
+	float:right;
+    width: initial;
+ } 
+ .valueTitle{
+    max-width: 210px;
+ }
+/**滑动条题样式结束*/
+
+
+
+/**分页题**/
+label.pValue{
+	float:none;
+}
+
+/**一屏一题问卷开始答题页面样式**/
+.QnaireTitle{
+	text-align:center;
+}
+.pageContent{
+    padding: 5px 0px 0px 10px;
+}
+
+/***
+*hww  2015/3/18  移动端答题界面相关的css
+**/
+
+
+/*必答题提示文字：红色、默认隐藏*/
+span.ques_required_promote{color:red;display:none;font-size:14px;}
+
+/*必答提示星号：红色 上表 字号*/
+span.star{color:red;vertical-align:super; font-size:10px;}
+
+
+
+
+/*设置问题说明文字的样式*/
+div.quesPrompt{font-size:14px;color:#8B4789;}
+
+
+
+
+/*设置选项框的背景色*/
+.ui-page-theme-a .ui-btn{background-color:#FFFFFF}
+
+/****量表题****/
+.tit{padding:20px 10px;font-size:10px;color: #3C9CCF;}
+
+/*------------------排序分题--------------------*/
+.M_sorting{background-color:#FFFFFF}
+.M_sorting li{border-bottom: 1px solid #EBEBEB!important; line-height: 45px; list-style:none;font-size:20px}
+.M_sorting .Slist{ position:relative; padding-right:45px!important; }
+.M_sorting .Slist .mun{ position:absolute; right:10px; top:55%; margin-top:-15px; min-width:26px; height:26px; background:#85C8FF; color:#fff; text-align:center; line-height:26px; border-radius:15px; }
+.S_select{ position:absolute; top:0px; left:0px; width:100%;  opacity:0; font-size: 30px; display:none; z-index: 9999; }
+.unstyled{ margin:5px 0 5px 0; padding:0;  border-radius: 3px; }
+
+
+
+/*分页题*/
+.submit { line-height: 34px; background: #009393; color: #fff; border-radius: 3px; border: none; cursor: pointer; font-size: 16px; text-align: center; font-family: "\5FAE\8F6F\96C5\9ED1"; }
+.linel4-1 { float: left; margin-left: 10px; width: 40%; display:inline;margin-top:10px}
+.linel4-2 { float: right; margin-left: 10px;  line-height: 35px; height: 35px;}
+
+/*开始答题按钮和下一题按钮*/
+#startButton{margin:10% auto 17%;line-height:50px;font-size:20px;width:90%}
+.nextQues{margin:12% auto auto;line-height:50px;font-size:20px;width:80%}
+
+
+/*题目序号以及题目的显示*/
+div.QuestionIndex{display:inline;float:left}
+.Ques_prompt{display:none}
+.QuestionTitle{font-size:20px;font-weight:bold;display:inline}
+div.QnaireEndTip{display:none}
+
+
+
+
+/*选项边界隐藏*/
+.ui-page-theme-a .ui-btn{border:hidden}
+
+
+
+
+span.rowOptionTitle{display:block}
+
+
+
+
+
+div.rowOptionTitle{padding-left:3%}
+
+div.error_description{color:red}
+
+.Q_type20{margin-bottom:30%}
+
+/*
+.error_description{
+	width:14em;
+	position:absolute;
+	z-index:100;
+	overflow:visible;
+	margin-top:-52px;
+	
+}
+*/
+
+
+
+
+
+
+
+/** 矩阵滑动条样式**/
+input.ui-slider-input{
+	background-color: #0099cc;
+    color: white;
+}
+
+
+/**量表题样式**/
+
+.Option-scale{
+	margin: -2px 6px 0px 6px;
+}
+div.scale-QuestionContent{
+	margin: 30px auto;
+}
+/*矩阵量表题样式*/
+.matrix-scale-coltitle{	
+	margin: 0px 0px 0 0px;
+	text-align:-webkit-center;
+	background-color:#eeffee
+}
+.matrix-scale-coltitles{
+	margin-left: 0px;
+}
+
+/**矩阵量表题行之间间距调整**/
+.matrix-scale-rowOption{
+	padding-top:5px
+}
+/*
+.matrix-scale-label:after{
+	left:18% !important;
+}
+/**单选问题框样式**/
+textarea.ui-input-text{
+	line-height:1.1em !important;
+	height:42px;
+}
+
+
+/**矩阵填空、下拉题行标题（rowOptiontitle）样式**/
+.rowOptionTitle{color:#000000}
+
+/**矩阵填空、下拉题列标题（colOptiontitle）样式**/
+.ui-mobile label{
+	margin-top:0.4em;
+	color: #666666;
+}
+
+
+/***原因填空框样式***/
+.OptionFillBlank, .option-fiLL-Reason{
+	width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+
+/**一屏一题重答链接样式***/
+.view footer a.refresh{
+	float:right;
+	margin-left:10px;
+	background-color:#000000;
+	font-size:14px;
+}

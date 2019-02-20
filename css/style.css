@@ -1,0 +1,26 @@
+
+
+/*首页题目*/
+.QnaireTitle{margin-top: 7%;font-size: 5vw;letter-spacing: 0.5vw;overflow: hidden;font-weight:bold;text-align:center}
+
+/*重答按钮*/
+.refresh{display:inline-block;float:right;}
+
+.progress{margin-top:2%}
+
+/*div.QuestionContent{margin-top:10%}*/
+
+
+.qnaireSubmit{line-height:50px;font-size:20px;width:90%;margin:0 auto}
+
+
+div.QnaireTip{width:60%;margin:0 auto;overflow-x:hidden;overflow-y:auto}
+
+.ui-field-contain{border-bottom-style:hidden}
+
+.nextQues{margin:12% auto}
+
+/* div.qnaireFooter{display:none} */
+
+
+
